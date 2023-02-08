@@ -93,7 +93,32 @@ console.log(findMinMax([1, 2, 6, 16, -4, 3, Infinity, NaN, null]));
 
 // 9.	Write a function to find the median element of array.
 
- 
+function mediana(array) {
+    for(i=0;i<array.length;i++){
+        for(j=i+1;j<array.length;j++){
+            if(array[i]>array[j]){
+                temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
+            }
+        }
+    }
+    arr=[];
+    var al = array.length;
+    var res = al/2;
+
+    if(al%2!=0){
+        res+=0.5;
+        arr[arr.length] = array[res];
+        
+    }else{
+        console.log(res);
+        arr[arr.length] = array[res-1];
+        arr[arr.length] = array[res];
+    }
+    return arr;    
+}
+console.log(mediana([3, 1, 5, 6, 1, 9]));
 
 // 10.	Write a function to find the element that occurs most frequently.
 function findMostFrequent(array) {
@@ -182,3 +207,43 @@ console.log(BMI(80, 1.85));
 // * a     *
 // * frame *
 // *********
+function printRectangular(array) {
+    var result = "";
+    var count = 0;
+    var max = 0;
+    var dif;
+
+    for (var i = 0; i < array.length; i++) {
+        if (array[i].length > max) {
+            max = array[i].length;
+        }
+    }
+
+    function printStars() {
+        var res = "";
+        for (var i = 0; i < max + 4; i++) {
+            res += "*";
+        }
+        return res;
+    }
+
+    function printEmpty(n) {
+        var res = "";
+        for (var i = 0; i < n; i++) {
+            res += " ";
+        }
+        return res;
+    }
+
+    result += printStars() + "\n";
+
+    for (var i = 0; i < array.length; i++) {
+        dif = max - array[i].length + 1;
+        result += "* " + array[i] + printEmpty(dif) + "*" + "\n";
+        count = 0;
+    }
+
+    result += printStars();
+    return result;
+}
+console.log(printRectangular(["Hellooooo", "World", "in", "a", "frame"]));
