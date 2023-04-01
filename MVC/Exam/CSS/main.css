@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#header {
+    background-image: url("https://web-static.wrike.com/blog/content/uploads/2014/07/iStock-587536358-777x518.jpg?av=9c5fe36efe3ab4b92967afe555490f2f");
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    padding: 25px;
+}
+
+#sum { 
+    font-size: 20px;
+    padding: 10px;
+    margin: 0;
+
+}
+.bar {
+    width: 200px;
+    margin: 5px auto;
+    color: rgb(70, 68, 68);
+    text-transform: uppercase;
+}
+
+#passed {
+    background-color: darkcyan;
+}
+
+#failed {
+    background-color: tomato;
+}
+
+#passStudents {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+#totalPassed {
+    color: white;
+    
+}
+
+#failStudents {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+
+}
+
+#totalFailed {
+    color: white;
+}
+
+form {
+    margin: 30px auto;
+}
+
+#button {
+    border: none;
+    background-color: transparent;
+    color: darkcyan;
+    font-weight: bold
+}
+
+input, select {
+    border: 1px solid gray;
+    padding: 5px 10px
+}
+
+#studentsLists {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+ul {
+    list-style: none;
+}
+
+#passedStudents p {
+    text-transform: uppercase; font-weight: bold;
+}
+
+#failedStudents p {
+    text-transform: uppercase;
+    color: red;
+    font-weight: bold;
+}

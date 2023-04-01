@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exam Statistics </title>
+    <link rel="stylesheet" href="./CSS/main.css">
+</head>
+<body>
+    <div class="container">
+        <div id="header">
+            <h1> Exam statistic june </h1>
+            <p id="sum"> Total students: <span id="totalStudents"> 0 </span></p>
+            <div class="bar" id="passed">
+                <p id="passStudents"> Passed <span id="totalPassed"> 0 </span></p>
+            </div>
+            <div class="bar" id="failed">
+                <p id="failStudents"> Failed <span id="totalFailed"> 0 </span></p>
+            </div>
+        </div>
+        <form>
+            <select id="subject">
+                <option value="javaScript"> JavaScript </option>
+                <option value="web"> Web </option>
+            </select>
+            <input type="text" placeholder="Name surname" id="name">
+           <input type="text" placeholder="Grade" id="grade">
+            <input type="button" value="ADD" id="button">
+        </form>
+        <p id="error"></p>
+        <div id="studentsLists">
+            <div id="passedStudents">
+                <p> Passed </p>
+                <ul id="passedStudentsList">
+                    <li> jsbxofmvk bsfjvlm </li>
+                    <li> khnvs vdzfac </li>
+                </ul>
+            </div>
+            <div id="failedStudents">    
+                <p> Failed </p>
+                <ul id="failedStudentList">
+                    <li> isfngk sgvgfvs </li>
+                    <li> nvgdx jnvdjnvf </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./JS/subject.js"></script>
+    <script src="./JS/student.js"></script>
+    <script src="./JS/exam.js"></script>
+    <script src="./JS/form.js"></script>
+    <script src="./JS/app.js"></script>
+</body>
+</html>

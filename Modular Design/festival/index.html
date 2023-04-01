@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MVC </title>
+    <link rel="stylesheet" href="./CSS/main.css">
+</head>
+<body>
+    <h1> Movie festival </h1>
+    <div class="container">
+        <p> Please fill in the form </p>
+        <p> Movie </p>
+        <form>
+            <label for="title"> Title </label>
+            <input type="text" id="title" placeholder="Title">
+            <label for="length"> Length (min) </label>
+            <input type="text" id="length" placeholder="Length in min">
+            <select id="genre">
+                <option value=""> - </option>
+                <option value="drama"> Drama </option>
+                <option value="comedy"> Comedy </option>
+                <option value="horror"> Horror </option>
+                <option value="thriller"> Thriller </option>
+                <option value="action"> Action </option>
+            </select>
+            <input type="button" value="Create movie" class="button" id="create-movie">
+        </form>
+        <p id="movie-error"></p>
+        <ul id="movie-list"></ul>
+        <p> Program </p>
+        <form>
+            <label for="date"> Date </label>
+            <input type="date" id="date">
+            <input type="button" value="Create program" class="button" id="create-program">
+        </form>
+        <p id="program-error"></p>
+        <ul id="program-list"></ul>
+        <form>
+            <label for="movie-select"> Movie </label>
+            <select id="movie-select">
+                <option value=""> - </option>
+            </select>
+            <label for="program-select"> Program </label>
+            <select id="program-select">
+                <option value=""> - </option>
+            </select>
+            <input type="button" value="Add movie to program" class="button" id="add-movie">
+        </form>
+        <p id="add-movie-error"></p>
+    </div>
+
+    <script src="./JS/data.js"></script>
+    <script src="./JS/ui.js"></script>
+    <script src="./JS/app.js"></script>
+</body>
+</html>

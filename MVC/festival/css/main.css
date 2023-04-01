@@ -1,0 +1,44 @@
+h1 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.container {
+    border: 1px solid black;
+    width: 80%;
+    margin: 0 auto ;
+    padding: ;
+}
+
+p {
+    margin-left: 15px;
+}
+
+form {
+    width: 95%;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+select, input {
+    width: 97%;
+    padding: 7px;
+    margin: 10px;
+}
+
+.button {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+#date, #title, #length {
+    width: 95%;
+}
+
+#movie-error, #program-error, #add-movie-error {
+    color: red;
+    font-weight: bold;
+}
